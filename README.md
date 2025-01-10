@@ -1,77 +1,38 @@
-# Welcome to Simply Books!
+# This is the name of my Project  [![Netlify Status](https://api.netlify.com/api/v1/badges/4ab7e730-7ed3-4cfd-a988-66195e79a991/deploy-status)](https://app.netlify.com/sites/drt-sortinghat/deploys)
+<!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
 
-This project will be completed in a 1 week sprint of 6 days or less. If you need support, put in a ticket ASAP and a senior engineer or teammate will help you.
+Here I am putting an overview of what my project is about. It comes below the name of my project so that others can read what it is about and get more details.
 
-## Get Started
-- [FRONT END: Definition of Done](#fe-definition-of-done)
-- [BACK END: Definition of Done](#be-definition-of-done)
-- [MVP Guidelines](#mvp-guidelines)
-- [Guide to getting started with this project](#guide-to-getting-started)
+[View App](#your-link)
 
-### FE Definition of Done
-A feature or task is considered "done" when:
-1. All tasks, features, and fixes must be ticketed and included on the GitHub project board.
-Make sure the project board uses columns like Backlog, In Progress, Testing, and Done to track work.
-1. The code is fully implemented and meets the requirements defined in the task.
-1. The feature passes all AC especially for CRUD functionality.
-1. The user can successfully perform Create, Read, Update, and Delete operations for both books and authors.
-1. All relationships between authors and books are correctly established and maintained.
-1. The feature is responsive and works across major browsers and mobile devices.
-1. The app is deployed on Netlify, and all features work in the deployed environment.
-1. The README is updated with any relevant instructions, and a Loom video (max 5 minutes) demonstrates the app's features.
-1. For any stretch goals, the feature must be functional and demonstrate proper user interaction (e.g., public/private book functionality, simulated purchase).
-1. Any issues or bugs identified during development or testing must be fixed by the developer. All work related to fixes must be ticketed and included on the GitHub project board.
-1. The project board must reflect all tasks, bugs, and updates, with each task being moved through the proper columns (Backlog, In Progress, Testing, Done).
+## Get Started <!-- OPTIONAL, but doesn't hurt -->
+PLACE CODE SNIPPET HERE
 
-### BE Definition of Done
-A feature or task is considered "done" when:
-1. All tasks, features, and fixes must be ticketed and included on the GitHub project board.
-Make sure the project board uses columns like Backlog, In Progress, Testing, and Done to track work.
-1. The code is fully implemented and meets the requirements defined in the task.
-1. The feature passes all AC especially for CRUD functionality.
-1. The user can successfully perform Create, Read, Update, and Delete operations for both books and authors using postman.
-1. All relationships between authors and books are correctly established and maintained.
-1. The API docs are deployed on Postman, and all features work in the deployed environment.
-1. The README is updated with any relevant instructions, and a Loom video (max 5 minutes) demonstrates the app's features.
-1. For any stretch goals, the feature must be functional and demonstrate proper user interaction (e.g., public/private book functionality, simulated purchase).
-1. Any issues or bugs identified during development or testing must be fixed by the developer. All work related to fixes must be ticketed and included on the GitHub project board.
-1. The project board must reflect all tasks, bugs, and updates, with each task being moved through the proper columns (Backlog, In Progress, Testing, Done).
+## About the User <!-- This is a scaled down user persona -->
+- The ideal user for this application is a teacher
+- They have students in their classrooms that they would like to put into random groups and they have a love and passion of Harry Potter
+- The problem this app solves for them is it allows them to get their students involved and excited about being in random groups. The students have felt that the groups have not been so random and based on favorites.
 
+## Features <!-- List your app features using bullets! Do NOT use a paragraph. No one will read that! -->
+- When a new student is added an object should be created and that object should be pushed into an array of students that then prints to the DOM.
+- House Colors: The color of the student's card changes depending on which house they were sorted.
+- Card Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
+- Voldermort's Army: Create a separate container of cards that hold the cards for students that have been expelled. These should be styled differently from Hogwarts students.
 
+## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
+https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
-### MVP Guidelines
-The Minimum Viable Product (MVP) for the Simply Books project includes:
-1. **CRUD Functionality for Books and Authors**:
-   - Users must be able to create, read, update, and delete books and authors.
-   - When viewing an author, all books associated with that author must be visible.
-   - When deleting an author, all of their books are also deleted.
-   
-2. **Author-Book Relationship**:
-   - Each book must be associated with an author.
-   - When a user views a book, the associated author's details must be accessible.
-   
-3. **Firebase Integration**:
-   - The app must use Firebase for authentication and real-time data management.
-   - Books and authors are tied to the logged-in user.
+## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
+- [Check out the deployed site](https://simplybooks-ac.netlify.app/)
+- [Wireframes](#your-link)
+- [Project Board](https://github.com/users/alyssacleland/projects/3/views/1)
+- [ERD](https://dbdiagram.io/d/Almost-Amazon-60315ba6fcdcb6230b20bbaa?utm_source=dbdiagram_embed&utm_medium=bottom_open)
 
-4. **User-Specific Data**:
-   - Each user should only see their own books and authors.
+## Code Snippet <!-- OPTIONAL, but doesn't hurt -->
+PLACE CODE SNIPPET HERE
 
-#### Stretch Goals:
-- **Public/Private Books**:
-   - Users can mark books as public or private.
-   - Public books are viewable by all users without needing to log in.
-   - Private books are only visible to the user who created them.
-   
-- **Simulated Book Purchases**:
-   - Users can add books to a cart and simulate purchasing them.
-   - No real transaction will occur, but the UI will allow users to add items to the cart and check out.
+## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
+<img width="1148" alt="Your Alt" src="your-link.png">
 
-### Guide to Getting Started
-Follow the deployment guide to get your app live!
-
-1. **Follow the Guide**:
-   - Detailed steps for each part of the project can be found in the [Guide to getting started with this project](/project-docs/GET_STARTED.md).
-
-1. **Submit**:
-   - Make sure to complete the README, Loom video demonstration, and submit your project with the deployed link.
+## Contributors
+- [Alyssa Cleland](https://github.com/alyssacleland)
