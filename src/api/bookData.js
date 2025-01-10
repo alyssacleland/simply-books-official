@@ -103,4 +103,25 @@ const booksOnSale = (uid) =>
       .catch(reject);
   });
 
-export { getBooks, createBook, booksOnSale, deleteBook, getSingleBook, updateBook, getBooksByAuthor };
+// TODO: STRETCH...SEARCH BOOKS
+const bookSearch = (uid, searchValue) =>
+  new Promise((resolve, reject) => {
+    fetch(`${endpoint}/books.json?orderBy="uid"&equalTo="${uid}"`, {
+      // update to order by uid
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        const searchBooks = Object.values(data).filter((item) => item.title.toLowerCase().includes(searchValue));
+        // you fetch the user's books by uid and then filter them in JavaScript to keep only those that you search for. how? ...
+        // Object.values(data): This method takes the data object (which is the books retrieved from the database) and extracts all of its values. Since Firebase stores data in an object with each key being a unique book ID, Object.values(data) will return an array of book objects.
+        // .filter((item) => XXX : This .filter() method goes through the array of books and returns only the books where XXX is true.
+        resolve(searchBooks);
+      })
+      .catch(reject);
+  });
+
+export { getBooks, createBook, booksOnSale, deleteBook, getSingleBook, updateBook, getBooksByAuthor, bookSearch };
