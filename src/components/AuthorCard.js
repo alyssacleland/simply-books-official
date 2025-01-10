@@ -22,10 +22,9 @@ export default function AuthorCard({ authorObj = {}, onUpdate }) {
           {/* TODO: add favorite? and logic that goes with it */}
           <br />
           <Card.Title>
-            {authorObj.first_name}
-            {authorObj.last_name}
+            {authorObj.first_name} {authorObj.last_name}
           </Card.Title>
-          <p>authorObj.email</p>
+          <p>{authorObj.email}</p>
           {/* DYNAMIC LINK TO VIEW THE author DETAILS  */}
           <Link href={`/author/${authorObj.firebaseKey}`} passHref>
             <Button variant="primary" className="m-2">
