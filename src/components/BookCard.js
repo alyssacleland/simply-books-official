@@ -22,8 +22,8 @@ function BookCard({ bookObj, onUpdate }) {
       <Card.Body>
         <Card.Title>{bookObj.title}</Card.Title>
         <p className="card-text bold">
-          {bookObj.sale && (
-            <span>
+          {bookObj.sale && ( // short circuit evaluation: if sale is true, then display SALE
+            <span className="bg-success text-white p-1">
               SALE
               <br />
             </span>
