@@ -6,7 +6,8 @@ const viewBookDetails = (bookFirebaseKey) =>
     getSingleBook(bookFirebaseKey)
       .then((bookObject) => {
         getSingleAuthor(bookObject.author_id).then((authorObject) => {
-          resolve({ authorObject, ...bookObject });
+          // bookObject.author_id is the author's firebaseKey
+          resolve({ authorObject, ...bookObject }); // results in an object containing authorObject and properties of bookObject like this structure: { authorObject: { ... }, (book)title: '...', ... }.
         });
       })
       .catch((error) => reject(error));

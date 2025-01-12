@@ -19,9 +19,8 @@ export default function AuthorCard({ authorObj = {}, onUpdate }) {
     <div>
       <Card style={{ width: '18rem', margin: '10px' }}>
         <Card.Body>
-          <p>{authorObj.favorite && <span className="bg-warning text-dark p-1">☆ FAVORITE</span>}</p>
           <Card.Title>
-            {authorObj.first_name} {authorObj.last_name}
+            {authorObj.first_name} {authorObj.last_name} {authorObj.favorite && '   ⭐'}
           </Card.Title>
           <p>{authorObj.email}</p>
           {/* DYNAMIC LINK TO VIEW THE author DETAILS  */}
