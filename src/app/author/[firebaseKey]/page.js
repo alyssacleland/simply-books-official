@@ -10,7 +10,6 @@ export default function ViewAuthor({ params }) {
   const { firebaseKey } = params;
 
   const [authorDetails, setAuthorDetails] = useState({});
-  console.log(authorDetails); // logging this for now to get rid of lint error
 
   useEffect(() => {
     // call back function
