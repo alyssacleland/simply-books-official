@@ -22,3 +22,7 @@ export default function EditBook({ params }) {
 EditBook.propTypes = {
   params: PropTypes.objectOf({}).isRequired,
 };
+
+// where is this URL accessible? In the book card, the edit book button:        <Link href="/book/new" passHref>
+// <Button>Add A Book</Button>
+// </Link>
