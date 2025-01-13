@@ -62,6 +62,7 @@ function BookForm({ obj = initialState }) {
   };
 
   return (
+    // note to self: apparently the className="text-black" matters a ton. labels weren't showing up until clickign input (just empty inputs) without it.
     <Form onSubmit={handleSubmit} className="text-black">
       <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Book</h2>
 

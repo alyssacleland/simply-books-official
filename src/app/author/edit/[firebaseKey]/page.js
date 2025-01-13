@@ -1,16 +1,23 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import AuthorForm from '../../../../components/forms/AuthorForm';
+import { getSingleAuthor } from '../../../../api/authorData';
 
 export default function EditAuthor({ params }) {
   // grab firebaseKey from url
   const { firebaseKey } = params;
-  console.log(firebaseKey); // logging this for now to get rid of lint error
 
-  // TODO: need to get single author data to pass to form
+  const [editItem, setEditItem] = useState({});
+
+  useEffect(() => {
+    getSingleAuthor(firebaseKey).then(setEditItem);
+  }, [firebaseKey]);
+
   return (
     <div>
-      <AuthorForm />
+      <AuthorForm obj={editItem} />
     </div>
   );
 }
