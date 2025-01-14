@@ -18,17 +18,6 @@ export default function ViewAuthor({ params }) {
   }, [firebaseKey]); // depenedency array: when firebaseKey changes, useEffect will run again
 
   const books = authorDetails.books || []; // if authorDetails.books is undefined, set books to an empty array TODO: understand why this fixed it...
-  console.log('books: ', books);
-  // // Set a state for books
-  // const [books, setBooks] = useState([]);
-
-  // // get user id
-  // const { user } = useAuth();
-
-  // // create a function that makes the API call to get all the books
-  // const getAllTheBooks = () => {
-  //   getBooks(user.uid).then(setBooks);
-  // };
 
   // Because of the way ViewAuthorDetails is structured, authorDetails will be an object with the authorObject properties directly accessible via authorDetails, and author books array accessible via authorDetails.books. Can map through that array simliar to how we did in Home page (with BookCard component).
   return (
