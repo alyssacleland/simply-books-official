@@ -124,4 +124,18 @@ const bookSearch = (uid, searchValue) =>
       .catch(reject);
   });
 
-export { getBooks, createBook, booksOnSale, deleteBook, getSingleBook, updateBook, getBooksByAuthor, bookSearch };
+// GET PUBLIC BOOKS
+const getPublicBooks = () =>
+  new Promise((resolve, reject) => {
+    fetch(`${endpoint}/books.json?orderBy="public"&equalTo=true`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => resolve(Object.values(data)))
+      .catch(reject);
+  });
+
+export { getBooks, createBook, booksOnSale, deleteBook, getSingleBook, updateBook, getBooksByAuthor, bookSearch, getPublicBooks };

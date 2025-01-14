@@ -49,7 +49,7 @@ function BookForm({ obj = initialState }) {
       updateBook(formInput).then(() => router.push(`/book/${obj.firebaseKey}`)); // navigates to the book's details page
     } else {
       // if the obj prop does not have a firebaseKey (CREATING)
-      const payload = { ...formInput, uid: user.uid }; // creates a payload object with the form input and the user's uid
+      const payload = { ...formInput, uid: user.uid, public: false }; // creates a payload object with the form input and the user's uid
       createBook(payload).then(({ name }) => {
         // creaes a book with the payload. the name is the firebase key of the book that was created
         const patchPayload = { firebaseKey: name }; // patch payload with the firebase key of the book that was created

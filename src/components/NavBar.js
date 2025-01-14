@@ -29,6 +29,9 @@ export default function NavBar() {
             <Link className="nav-link" href="/profile">
               Profile
             </Link>
+            <Link className="nav-link" href="/publicBooks">
+              Discover Books
+            </Link>
           </Nav>
           <Button variant="danger" onClick={signOut}>
             Sign Out
