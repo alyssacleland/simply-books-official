@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from 'next/link';
@@ -8,7 +9,8 @@ export default function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Link passHref href="/" className="navbar-brand">
+        <Link passHref href="/" className="navbar-brand" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtNjAzLWVsZW1lbnQtMTg2LnBuZw.png" alt="Simply Books Logo" width={50} height={50} style={{ marginRight: '10px' }} />
           Simply Books
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

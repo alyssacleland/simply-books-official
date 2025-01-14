@@ -8,7 +8,7 @@ import { signOut } from '../../utils/auth';
 
 export default function Profile() {
   const { user } = useAuth();
-  console.log('user object:', user);
+
   return (
     <div>
       <User user={user} />
