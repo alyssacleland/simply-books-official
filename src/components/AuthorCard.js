@@ -19,6 +19,7 @@ export default function AuthorCard({ authorObj = {}, onUpdate }) {
     <div>
       <Card style={{ width: '18rem', margin: '10px' }}>
         <Card.Body>
+          <Card.Img variant="top" src={authorObj.image} alt={authorObj.title} style={{ height: '400px', objectFit: 'cover' }} />
           <Card.Title>
             {authorObj.first_name} {authorObj.last_name} {authorObj.favorite && '   ⭐'}
           </Card.Title>
