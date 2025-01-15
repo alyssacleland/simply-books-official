@@ -2,7 +2,8 @@
 
 <!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
 
-Simply Books is a web application that allows users to view and manage a collection of books and authors. Users can add, edit, and delete books and authors, and view detailed information about each author and their associated books.
+Simply Books is a web application that allows users to view and manage a collection of books and authors. Users can add, edit, and delete books and authors, view detailed information about each author and their associated books, view their user profile, and discover public books to add to their collection.
+
 [View App](https://simplybooks-ac.netlify.app/)
 
 ## About the User <!-- This is a scaled down user persona -->
@@ -15,11 +16,14 @@ The target users for Simply Books are book enthusiasts who want to keep track of
 - Add, edit, and delete books
 - Add, edit, and delete authors
 - View detailed information about each author and their associated books
+- View user profile
+- Discover public books and add them to your collection
+- User specific collection of books and authors, and public books are viewable by all users
 - Responsive design for mobile and desktop
 
 ## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
 
-TODO:
+[Video Walkthrough](https://www.loom.com/share/76a48ecef11e49779bb55d6089ca22e4?sid=8fe18aae-0b71-4717-8672-4444a30f1a64)
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
 
